@@ -1,0 +1,7 @@
+Promise yapısının bir objeden farkı yok
+Promise yapısı bizi callback pyramid ve hell den kurtarır
+
+3 durum vardır. Olumlu, olumsuz, pending(bekleme)
+
+Rest API ye request gönderiyoruz. API bir "promise" objesi oluşturuyor. State ve value özelliklerine dikkat etmek gerekiyor. "Resolve" fonkisyonu sayesinde veri bize dönülür. Resolve ile atılan veri status ü pending den resolved(fullfilled) a döner(olumlu). 3. durum rejecet fonksiyonu ile API den gönderilir. State i rejected, value de error mesajı olacak.
+Promise den veri alma olumlu olması halinde "then" ile; olumsuz bir durum varsa "catch" ile yakalanır.
